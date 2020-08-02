@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etUrl"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:hint="@string/url"
+        android:inputType="textUri"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnOpenUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="250dp"
+        android:text="@string/open"
+        app:layout_constraintStart_toEndOf="@+id/etUrl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:hint="@string/number"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUrl" />
+
+    <Button
+        android:id="@+id/btnOpenPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/open"
+        app:layout_constraintStart_toEndOf="@+id/etNumber"
+        app:layout_constraintTop_toBottomOf="@+id/btnOpenUrl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
